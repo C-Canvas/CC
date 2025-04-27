@@ -1,0 +1,50 @@
+/* Fix for the orange circle in hero section */
+
+/* Target hero section orange elements */
+#hero-interaction .col-img-wrapper img,
+#hero-bg-image,
+.hero-video-wrapper,
+.next-project-image-bg,
+#clone-image .hero-translate,
+.hero-translate,
+.circle-image,
+.hero-video-wrapper video {
+    filter: hue-rotate(265deg) !important;
+}
+
+/* Main color override */
+:root {
+    --primary-color: #9900ff !important;
+}
+
+/* Force primary color for all color elements */
+[style*="background-color:#fa821d"],
+[style*="background-color: #fa821d"],
+[style*="color:#fa821d"],
+[style*="color: #fa821d"],
+[style*="border-color:#fa821d"],
+[style*="border-color: #fa821d"] {
+    filter: hue-rotate(265deg) !important;
+}
+
+/* Force color for hero section */
+#hero-bg-image {
+    background-color: #9900ff !important;
+}
+
+/* Override background color for the hero */
+#hero-interaction .col-img-wrapper::before,
+#hero-interaction .col-img-wrapper::after {
+    background-color: #9900ff !important;
+}
+
+/* Override cursor color */
+#ball, #ball-loader {
+    background-color: #9900ff !important;
+    border-color: #9900ff !important;
+}
+
+/* Preserve logo colors */
+#clapat-logo img {
+    filter: none !important;
+} 

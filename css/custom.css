@@ -1,0 +1,73 @@
+/* Custom styles for CodeCanvas - Change nav focus color to match logo */
+
+/* Active menu item color - white on purple background */
+.clapat-header.classic-menu .flexnav li a.active .before-span span {
+    color: #ffffff !important;
+}
+
+/* Menu hover state - purple to match logo */
+.classic-menu .flexnav li a span::before {
+    background-color: #9900ff !important;
+}
+
+/* Additional selector for the hover bubble background */
+body[data-primary-color="#9900ff"] .classic-menu .flexnav li a span::before {
+    background-color: #9900ff !important;
+}
+
+/* Force primary color for all hover effects */
+:root {
+    --primary-color: #9900ff !important;
+}
+
+/* Text color when hovering - make it white */
+.classic-menu .flexnav li:hover a span {
+    color: #ffffff !important;
+}
+
+/* Sub-menu active state - purple to match logo */
+.classic-menu .flexnav li ul li a.active, 
+.classic-menu .flexnav li ul li a:hover {
+    color: #9900ff !important;
+    opacity: 1;
+}
+
+/* Mobile menu focus color */
+.flexnav li:hover a, 
+.flexnav li a.active {
+    color: #9900ff !important;
+}
+
+/* Mobile submenu focus color */
+.flexnav li ul li:hover a, 
+.flexnav li ul li a.active,
+.flexnav:hover li ul li a.active, 
+.flexnav:hover li ul li:hover > a {
+    color: #9900ff !important;
+}
+
+/* Make text white in the purple bubble background */
+.classic-menu .flexnav li a span::after {
+    color: #ffffff !important;
+}
+
+/* Fix for hover bubble color in javascript-generated content */
+.classic-menu .flexnav li a span::before,
+.classic-menu .flexnav li:hover a span::before {
+    background-color: #9900ff !important;
+}
+
+/* Direct override for menu animations */
+.classic-menu .flexnav li a span::before,
+.classic-menu .flexnav li:hover a span::before,
+.classic-menu .flexnav li a.active span::before {
+    background-color: #9900ff !important;
+    color: #ffffff !important;
+}
+
+/* Fix for main title hover effect */
+#hero-caption .hero-title span::before,
+#hero-caption .hero-subtitle span::before,
+.text-fill-animation span::before {
+    background-color: #9900ff !important;
+} 
